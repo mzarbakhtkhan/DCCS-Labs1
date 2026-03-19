@@ -1,0 +1,14 @@
+Xsession: X session started for ubuntu at Sat Dec  6 11:26:10 UTC 2025
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:1
+dbus-update-activation-environment: setting XAUTHORITY=/run/user/1000/dcv/my-session.xauth
+localuser:ubuntu being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+Xsession: X session started for ubuntu at Sat Dec  6 11:26:20 UTC 2025
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:1
+dbus-update-activation-environment: setting XAUTHORITY=/run/user/1000/dcv/my-session.xauth
+localuser:ubuntu being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1

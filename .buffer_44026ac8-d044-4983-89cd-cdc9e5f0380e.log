@@ -1,0 +1,5 @@
+Script started on 2025-12-27 13:25:22+00:00 [<not executed on terminal>]
+Enhanced logging active (v3.0) | Session: 44026ac8...
+Instance: i-0b2b6de12fa518a24 | Container: spot
+[?2004h]0;ubuntu@ip-172-31-15-103: ~ubuntu@ip-172-31-15-103:~$ 
+Script done on 2025-12-27 13:30:32+00:00 [COMMAND_EXIT_CODE="0"]
