@@ -1,0 +1,57 @@
+# Lab28: Scheduling Tasks with Crontab
+# Goal: Understand crontab basics, list jobs, create/manage cron jobs, automate routine tasks
+
+# ────────────────────────────────────────────────
+# Task 1: Check current crontab (should be empty for new user)
+# ────────────────────────────────────────────────
+crontab -l
+# Output: no crontab for ubuntu
+
+# ────────────────────────────────────────────────
+# Task 2: Creating a daily script and scheduling it
+# ────────────────────────────────────────────────
+
+# 2.1 Create the script in your home directory
+vi ~/daily_script.sh
+
+# Example content you might have added (adjust as needed):
+#!/bin/bash
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Daily script executed" >> ~/daily_log.txt
+# ... your actual commands here ...
+
+# 2.2 Make the script executable
+chmod +x ~/daily_script.sh
+
+# Alternative safe syntax (avoids any tilde/path issues later):
+# chmod +x "$HOME/daily_script.sh"
+
+# 2.3 Open crontab editor (nano was chosen)
+crontab -e
+# When prompted to select editor, you chose 1 → nano
+
+# Inside the editor, you added (or should add) a line like this:
+# Run every day at midnight (00:00)
+0 0 * * * /bin/bash "$HOME/daily_script.sh" >> "$HOME/daily_cron.log" 2>&1
+
+# Recommended improvements you can use instead of plain ~/ :
+# • Use full path:           /home/ubuntu/daily_script.sh
+# • Or use $HOME variable:   "$HOME/daily_script.sh"
+# • Redirect output & errors so you can debug later
+
+# After saving and exiting nano → crontab: installing new crontab
+
+# ────────────────────────────────────────────────
+# Task 3: Verify the crontab, then remove/comment out the job
+# ────────────────────────────────────────────────
+
+# Check what was installed
+crontab -l
+
+# Expected clean output (example):
+# Edit this file to introduce tasks to be run by cron.
+# ...
+# m h  dom mon dow   command
+#0 0 * * * /bin/bash "$HOME/daily_script.sh" >> "$HOME/daily_cron.log" 2>&1
+
+# Final check – back to empty or only comments
+crontab -l
