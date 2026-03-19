@@ -1,1 +1,21 @@
-
+ubuntu@ip-172-31-10-202:~$ #Task1
+ubuntu@ip-172-31-10-202:~$ at -V
+at version 3.2.5
+Please report bugs to the Debian bug tracking system (http://bugs.debian.org/)
+or contact the maintainers (at@packages.debian.org).
+ubuntu@ip-172-31-10-202:~$ sudo systemctl start atd
+ubuntu@ip-172-31-10-202:~$ sudo systemctl enable atd
+Synchronizing state of atd.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable atd
+ubuntu@ip-172-31-10-202:~$ #task2
+ubuntu@ip-172-31-10-202:~$ echo "echo 'Hello World' >> ~/hello.txt" | at now + 1 minute
+warning: commands will be executed using /bin/sh
+job 1 at Thu Mar 19 19:18:00 2026
+ubuntu@ip-172-31-10-202:~$ atq
+1       Thu Mar 19 19:18:00 2026 a ubuntu
+2       Thu Mar 19 19:18:00 2026 a ubuntu
+ubuntu@ip-172-31-10-202:~$ atrm 1
+Cannot find jobid 1
+ubuntu@ip-172-31-10-202:~$ atq
+ubuntu@ip-172-31-10-202:~$ #Endoflab
+ubuntu@ip-172-31-10-202:~$
