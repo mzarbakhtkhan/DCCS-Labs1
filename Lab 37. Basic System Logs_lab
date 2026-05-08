@@ -1,0 +1,46 @@
+successfully completed "Basic System Logs", a practical lab focused on understanding, navigating, and analyzing Linux system log files. This lab strengthened my ability to monitor system health, troubleshoot issues, and observe real-time system behavior.
+System logs are critical for diagnosing problems, tracking events, and maintaining the overall stability and security of a Linux environment. This lab gave me hands-on experience working with the standard logging infrastructure.
+Key Skills Acquired
+1. Navigating System Log Directory
+Bashcd /var/log
+ls -lh
+
+Located and explored the /var/log directory, the central repository for system and application logs.
+Used ls -lh to view files with human-readable sizes and permissions.
+
+2. Viewing and Analyzing Logs
+Bashless syslog        # or less messages
+grep "error" syslog
+
+Accessed main system log files (syslog or messages depending on the distribution).
+Efficiently searched for specific keywords like "error" using grep.
+
+3. Real-time Log Monitoring
+Bashtail -f syslog     # or tail -f messages
+
+Used tail -f to monitor logs in real-time as new entries are written.
+Learned how to interrupt monitoring with Ctrl + C.
+
+Concepts Mastered
+
+Structure and purpose of the /var/log directory
+Difference between common log files (syslog, messages, auth.log, kern.log, etc.)
+Effective use of less, grep, and tail for log analysis
+Real-time system observation techniques
+Importance of logs in troubleshooting and proactive system maintenance
+
+Why This Skill Matters
+Understanding system logs is essential for:
+
+Troubleshooting system and application issues
+Security monitoring and incident response
+Performance analysis
+Compliance and auditing
+DevOps and system administration workflows
+
+This lab forms a strong foundation for more advanced log management using tools like journalctl, logrotate, ELK Stack, and Prometheus/Grafana in production environments.
+
+Status: Completed & Applied
+Tools Practiced: cd, ls, less, grep, tail -f
+
+Building strong Linux administration and troubleshooting skills through systematic, hands-on labs. From file searching with find to real-time log monitoring — advancing my command-line expertise one powerful tool at a time.
