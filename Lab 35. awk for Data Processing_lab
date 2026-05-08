@@ -1,0 +1,19 @@
+completed the "awk for Data Processing" lab, where I gained hands-on experience with one of the most powerful and efficient text-processing tools available in Unix-like environments.
+awk is a versatile pattern-scanning and processing language that excels at manipulating structured text data without needing to load everything into memory — making it ideal for log analysis, data extraction, reporting, and quick transformations on large files.
+What I Mastered
+1. Extracting Specific Columns
+Learned how to precisely select and print desired fields from delimited data using field variables ($1, $2, etc.).
+Example Command:
+awk '{print $1, $3}' data.txt
+This cleanly outputs the Name and Gender columns while ignoring the rest.
+2. Filtering Rows with Conditions
+Developed the ability to apply logical filters directly in the pattern section of awk.
+Example Command:
+awk '$2 > 25 {print $0}' data.txt
+This returns only the records where Age is greater than 25, demonstrating conditional processing in a single, efficient pass.
+Skills Gained
+
+Understanding awk's core syntax: pattern { action }
+Working with default field separators (whitespace) and the full record variable $0
+Combining filtering and printing operations for targeted data extraction
+Appreciating awk's strength for lightweight, fast, and scriptable data processing on the command line
