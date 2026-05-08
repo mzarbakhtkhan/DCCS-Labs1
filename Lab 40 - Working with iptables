@@ -1,0 +1,48 @@
+successfully completed "Working with iptables", a practical lab focused on Linux firewall management using the iptables command-line utility.
+This lab provided essential hands-on experience in configuring, viewing, and persisting firewall rules on Linux systems — a critical skill for securing servers and managing network traffic.
+Key Skills Acquired
+1. Listing Existing Firewall Rules
+Bashsudo iptables -L
+
+Viewed current firewall rules across INPUT, FORWARD, and OUTPUT chains.
+Understood rule structure, default policies, and chain behavior.
+
+2. Adding Rules to Allow or Block Ports
+Bash# Allow HTTP traffic
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+
+# Block a port (example)
+sudo iptables -A INPUT -p tcp --dport 80 -j DROP
+
+Learned how to append rules to specific chains.
+Mastered rule syntax: protocol, destination port, and target action (ACCEPT / DROP).
+
+3. Saving Rules for Persistence
+Bashsudo iptables-save > /etc/iptables/rules.v4
+
+Saved firewall configurations so rules survive system reboots.
+Understood the importance of persistence in production environments.
+
+Concepts Mastered
+
+Role of iptables as a front-end for the Linux kernel's netfilter firewall
+Chain structure (INPUT, OUTPUT, FORWARD) and default policies
+Rule creation using protocol (-p), port (--dport), and jump target (-j)
+Difference between temporary rules and persistent configurations
+Basic network security principles for Linux servers
+
+Why This Skill Matters
+Proficiency in iptables is vital for:
+
+Securing Linux servers against unauthorized access
+Allowing legitimate traffic (web, SSH, databases, etc.)
+Troubleshooting network connectivity issues
+Implementing basic firewall policies in production environments
+Building a foundation for advanced tools like firewalld, ufw, and nftables
+
+This lab significantly enhanced my understanding of Linux network security and system hardening.
+
+Status: Completed & Applied
+Tools Practiced: iptables -L, iptables -A, iptables-save
+
+Progressing steadily in Linux system administration — from service management with systemd to configuring firewalls with iptables. Strengthening my skills in security, networking, and server management.
