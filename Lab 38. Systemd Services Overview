@@ -1,0 +1,46 @@
+✅ Completed: Lab 38 - Systemd Services Overview
+Lab Summary
+Successfully completed "Systemd Services Overview", a hands-on lab that covers the fundamentals of systemd — the modern init system used by most major Linux distributions today.
+This lab provided practical experience in managing background services using the systemctl command, which is an essential skill for Linux system administration, DevOps, and server management.
+Key Skills Acquired
+1. Listing Services
+Bashsystemctl list-units --type=service
+
+Viewed all active systemd services with their current status (LOAD, ACTIVE, SUB).
+
+2. Starting and Stopping Services
+sudo systemctl start <service-name>
+sudo systemctl stop <service-name>
+sudo systemctl status <service-name>
+
+Learned how to control running services and verify their current state.
+
+3. Enabling and Disabling Services at Boot
+sudo systemctl enable <service-name>
+sudo systemctl disable <service-name>
+
+Configured services to start automatically on system boot or prevented them from doing so.
+
+Concepts Mastered
+
+Understanding the role of systemd in booting and managing services
+Working with systemctl for service lifecycle management
+Difference between starting a service and enabling it at boot
+Reading service status output and interpreting systemd unit states
+Practical service management (e.g., apache2, nginx, ssh, etc.)
+
+Why This Skill Matters
+Proficiency in systemd and systemctl is critical for:
+
+Managing production Linux servers
+Troubleshooting service failures
+Automating service deployment and configuration
+Ensuring system stability and security
+Performing efficient resource management
+
+This knowledge forms the foundation for working with modern Linux environments, container orchestration (Docker, Podman), and cloud infrastructure.
+
+Status: Completed & Applied
+Tools Practiced: systemctl, list-units, start, stop, status, enable, disable
+
+Continuing to strengthen my Linux administration skills — from file searching and log analysis to full service management with systemd. Building a solid foundation for professional DevOps and system administration work.
