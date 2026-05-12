@@ -1,0 +1,77 @@
+# 44. Basic LVM Concepts Lab
+
+## 📌 Overview
+This lab demonstrates the fundamentals of **Logical Volume Manager (LVM)** in Linux. LVM provides flexible disk management by allowing administrators to create, resize, and remove storage volumes dynamically without being restricted by physical partition boundaries.
+
+### 🎯 Objectives
+- Understand the core concepts of LVM (Physical Volumes, Volume Groups, and Logical Volumes)
+- Create and configure a complete LVM setup
+- Practice safe creation and removal of LVM components
+- Learn proper LVM management workflow
+
+## 🛠️ Lab Tasks Completed
+
+### Task 1: Check Existing Logical Volumes
+- Verified current LVM configuration using `lvdisplay`
+- Checked available disks with `fdisk -l`
+
+### Task 2: Create Physical Volume, Volume Group, and Logical Volume
+- Initialized a disk as Physical Volume (`pvcreate`)
+- Created a Volume Group (`vgcreate`)
+- Created a Logical Volume of 1GB (`lvcreate`)
+- Formatted the logical volume with `ext4` filesystem
+- Successfully mounted the logical volume for use
+
+### Task 3: Remove LVM Components Safely
+- Unmounted the filesystem
+- Removed Logical Volume (`lvremove`)
+- Removed Volume Group (`vgremove`)
+- Removed Physical Volume (`pvremove`)
+
+## 📋 Commands Used
+
+```bash
+# 1. Check existing LVM
+sudo lvdisplay
+sudo fdisk -l
+
+# 2. Create Physical Volume
+sudo pvcreate /dev/sdb
+
+# 3. Create Volume Group
+sudo vgcreate myvg /dev/sdb
+
+# 4. Create Logical Volume
+sudo lvcreate -L 1G -n mylv myvg
+
+# 5. Format and Mount
+sudo mkfs.ext4 /dev/myvg/mylv
+sudo mkdir /mnt/mylv
+sudo mount /dev/myvg/mylv /mnt/mylv
+
+# 6. Clean Removal
+sudo umount /mnt/mylv
+sudo lvremove /dev/myvg/mylv
+sudo vgremove myvg
+sudo pvremove /dev/sdb
+🔍 Key Learnings
+
+LVM Architecture: Physical Volume (PV) → Volume Group (VG) → Logical Volume (LV)
+LVM provides much greater flexibility compared to traditional disk partitioning
+Proper cleanup sequence is essential to safely release storage resources
+Logical Volumes can be easily extended or reduced while the system is running (dynamic resizing)
+Understanding LVM is a critical skill for Linux system administrators and DevOps engineers
+
+💡 Why LVM is Important
+
+Dynamic storage management without downtime
+Easy volume resizing (grow/shrink)
+Better utilization of disk space
+Support for features like snapshots, striping, and mirroring
+Widely used in enterprise and cloud environments
+
+🧪 Environment
+
+Operating System: Linux (Ubuntu / CentOS / RHEL)
+Privileges: Root / Sudo access
+Storage: Additional disk (/dev/sdb or similar)
