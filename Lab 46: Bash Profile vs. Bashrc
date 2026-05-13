@@ -1,64 +1,63 @@
-**Understanding and Customizing Your Shell Environment**
+✅ Lab Completed: 46. Bash Profile vs. Bashrc
+Repository Title Suggestion
+Linux-Labs or Bash-Shell-Customization-Labs or Unix-Labs-Portfolio
+
+README.md Content (Copy-Paste Ready)
+Markdown# 46. Bash Profile vs. Bashrc
+
+**Lab Completed** ✓
+
+**Date Completed:** May 13, 2026
 
 ---
 
-### Objectives
-- Understand the key differences between `.bash_profile` and `.bashrc`
-- Learn how to customize your shell by editing these configuration files
-- Gain hands-on experience with aliases and environment variables
+## 🎯 Objectives Achieved
 
-### Prerequisites
-- Basic knowledge of Unix/Linux command line
-- Access to a Unix/Linux system with a home directory
-- A text editor (nano, vim, gedit, etc.)
+- Understood the key differences between `.bash_profile` and `.bashrc`
+- Learned how to customize the Bash shell environment
+- Gained hands-on experience creating aliases and environment variables
+- Mastered reloading configuration files without restarting the terminal
 
 ---
 
-### Lab Tasks
+## 📋 Lab Tasks Completed
 
-#### 1. Examine `.bash_profile` and `.bashrc`
+### 1. Examined Configuration Files
+- Navigated to home directory (`cd ~`)
+- Listed hidden files using `ls -a`
+- Opened and reviewed both `~/.bash_profile` and `~/.bashrc`
+- Understood their execution context:
+  - **`.bash_profile`**: Runs for **login shells**
+  - **`.bashrc`**: Runs for **interactive non-login shells**
 
-**Find the Files**
+### 2. Customized Shell Environment
 
-Open your terminal and navigate to your home directory:
-
+**Backup Created (Best Practice)**
 ```bash
-cd ~
-ls -a
-This will show all files, including hidden ones (starting with .).
-Review the Files
-Bash# Open .bash_profile
-nano ~/.bash_profile
-
-# Open .bashrc
-nano ~/.bashrc
-Key Concept
-
-.bash_profile → Executed for login shells (when you first log in)
-.bashrc → Executed for interactive non-login shells (most terminal sessions)
-
-
-2. Add Custom Alias and Environment Variable
-Backup Your Files (Recommended)
-Bashcp ~/.bashrc ~/.bashrc.backup
+cp ~/.bashrc ~/.bashrc.backup
 cp ~/.bash_profile ~/.bash_profile.backup
-Edit .bashrc
-Bashnano ~/.bashrc
-Add the following lines at the end of the file:
+Added to ~/.bashrc:
 Bash# Custom Aliases
-alias ll='ls -la'
-alias gs='git status'
-alias lt='ls --tree'
+alias ll='ls -la'           # Detailed list view
+alias gs='git status'       # Quick git status
+alias lt='ls --tree'        # Tree view (if supported)
 
-# Custom Environment Variable
+# Environment Variable
 export MY_VAR="Hello World!"
-Save and exit (Ctrl+O → Enter → Ctrl+X in nano).
-Apply the Changes
+export PROJECT_PATH="$HOME/Projects"
+Applied Changes
 Bashsource ~/.bashrc
-Verify
-Bash# Test alias
-ll
+3. Verification
 
-# Test environment variable
-echo $MY_VAR
+✅ ll command works as expected (shows detailed listing)
+✅ echo $MY_VAR returns "Hello World!"
+✅ New aliases and variables available in current and new terminal sessions
 
+
+🛠️ Skills Demonstrated
+
+Shell configuration management
+Creating productive aliases
+Managing environment variables
+Understanding login vs non-login shells
+Safe editing practices (backups)
