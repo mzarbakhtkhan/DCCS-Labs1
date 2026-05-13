@@ -1,0 +1,64 @@
+**Understanding and Customizing Your Shell Environment**
+
+---
+
+### Objectives
+- Understand the key differences between `.bash_profile` and `.bashrc`
+- Learn how to customize your shell by editing these configuration files
+- Gain hands-on experience with aliases and environment variables
+
+### Prerequisites
+- Basic knowledge of Unix/Linux command line
+- Access to a Unix/Linux system with a home directory
+- A text editor (nano, vim, gedit, etc.)
+
+---
+
+### Lab Tasks
+
+#### 1. Examine `.bash_profile` and `.bashrc`
+
+**Find the Files**
+
+Open your terminal and navigate to your home directory:
+
+```bash
+cd ~
+ls -a
+This will show all files, including hidden ones (starting with .).
+Review the Files
+Bash# Open .bash_profile
+nano ~/.bash_profile
+
+# Open .bashrc
+nano ~/.bashrc
+Key Concept
+
+.bash_profile → Executed for login shells (when you first log in)
+.bashrc → Executed for interactive non-login shells (most terminal sessions)
+
+
+2. Add Custom Alias and Environment Variable
+Backup Your Files (Recommended)
+Bashcp ~/.bashrc ~/.bashrc.backup
+cp ~/.bash_profile ~/.bash_profile.backup
+Edit .bashrc
+Bashnano ~/.bashrc
+Add the following lines at the end of the file:
+Bash# Custom Aliases
+alias ll='ls -la'
+alias gs='git status'
+alias lt='ls --tree'
+
+# Custom Environment Variable
+export MY_VAR="Hello World!"
+Save and exit (Ctrl+O → Enter → Ctrl+X in nano).
+Apply the Changes
+Bashsource ~/.bashrc
+Verify
+Bash# Test alias
+ll
+
+# Test environment variable
+echo $MY_VAR
+
