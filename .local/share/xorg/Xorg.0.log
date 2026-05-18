@@ -1,0 +1,489 @@
+[    24.181] (--) Log file renamed from "/home/ubuntu/.local/share/xorg/Xorg.pid-1550.log" to "/home/ubuntu/.local/share/xorg/Xorg.0.log"
+[    24.182] 
+X.Org X Server 1.21.1.11
+X Protocol Version 11, Revision 0
+[    24.182] Current Operating System: Linux ip-172-31-10-216 6.14.0-1018-aws #18~24.04.1-Ubuntu SMP Mon Nov 24 19:46:27 UTC 2025 x86_64
+[    24.182] Kernel command line: BOOT_IMAGE=/vmlinuz-6.14.0-1018-aws root=PARTUUID=cd553419-794d-4da4-9ba5-c355f5f9f74d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 panic=-1
+[    24.182] xorg-server 2:21.1.12-1ubuntu1.5 (For technical support please see http://www.ubuntu.com/support) 
+[    24.182] Current version of pixman: 0.42.2
+[    24.182] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    24.182] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    24.183] (==) Log file: "/home/ubuntu/.local/share/xorg/Xorg.0.log", Time: Mon May 18 09:23:49 2026
+[    24.203] (==) Using config file: "/etc/X11/xorg.conf"
+[    24.203] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    24.203] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    24.222] (==) No Layout section.  Using the first Screen section.
+[    24.222] (**) |-->Screen "Screen0" (0)
+[    24.222] (**) |   |-->Monitor "Virtual-1"
+[    24.222] (==) No device specified for screen "Screen0".
+	Using the first device section listed.
+[    24.222] (**) |   |-->Device "DummyDevice"
+[    24.222] (**) Allowing byte-swapped clients
+[    24.222] (==) Automatically adding devices
+[    24.222] (==) Automatically enabling devices
+[    24.222] (==) Automatically adding GPU devices
+[    24.222] (==) Automatically binding GPU devices
+[    24.222] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    24.238] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    24.238] 	Entry deleted from font path.
+[    24.238] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    24.238] 	Entry deleted from font path.
+[    24.238] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    24.238] 	Entry deleted from font path.
+[    24.238] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    24.238] 	Entry deleted from font path.
+[    24.238] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    24.238] 	Entry deleted from font path.
+[    24.238] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[    24.238] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    24.238] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    24.238] (II) Loader magic: 0x5ac1c906c020
+[    24.238] (II) Module ABI versions:
+[    24.238] 	X.Org ANSI C Emulation: 0.4
+[    24.238] 	X.Org Video Driver: 25.2
+[    24.238] 	X.Org XInput driver : 24.4
+[    24.238] 	X.Org Server Extension : 10.0
+[    24.239] (++) using VT number 2
+
+[    24.241] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[    24.242] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    24.242] (II) Platform probe for /sys/devices/pci0000:00/0000:00:03.0/simple-framebuffer.0/drm/card0
+[    24.243] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 14 paused 0
+[    24.246] (--) PCI:*(0@0:3:0) 1d0f:1111:0000:0000 rev 0, Mem @ 0xc0000000/4194304, BIOS @ 0x????????/131072
+[    24.246] (II) LoadModule: "glx"
+[    24.247] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    24.296] (II) Module glx: vendor="X.Org Foundation"
+[    24.296] 	compiled for 1.21.1.11, module version = 1.0.0
+[    24.296] 	ABI class: X.Org Server Extension, version 10.0
+[    24.296] (II) LoadModule: "dummy"
+[    24.296] (II) Loading /usr/lib/xorg/modules/drivers/dummy_drv.so
+[    24.297] (II) Module dummy: vendor="X.Org Foundation"
+[    24.297] 	compiled for 1.21.1.11, module version = 0.4.0
+[    24.297] 	Module class: X.Org Video Driver
+[    24.297] 	ABI class: X.Org Video Driver, version 25.2
+[    24.297] (II) DUMMY: Driver for Dummy chipsets: dummy
+[    24.297] (WW) Falling back to old probe method for dummy
+[    24.297] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    24.297] (II) DUMMY(0): Chipset is a DUMMY
+[    24.297] (**) DUMMY(0): Depth 24, (--) framebuffer bpp 32
+[    24.297] (==) DUMMY(0): RGB weight 888
+[    24.297] (==) DUMMY(0): Default visual is TrueColor
+[    24.297] (==) DUMMY(0): Using gamma correction (1.0, 1.0, 1.0)
+[    24.297] (DB) xf86MergeOutputClassOptions unsupported bus type 0
+[    24.297] (**) DUMMY(0): VideoRAM: 2048000 kByte
+[    24.297] (--) DUMMY(0): Max Clock: 300000 kHz
+[    24.297] (II) DUMMY(0): Virtual-1: Using default hsync range of 31.50-48.00 kHz
+[    24.297] (II) DUMMY(0): Virtual-1: Using default vrefresh range of 50.00-70.00 Hz
+[    24.297] (II) DUMMY(0): Virtual-1: Using default maximum pixel clock of 65.00 MHz
+[    24.297] (II) DUMMY(0): Clock range:  11.00 to 300.00 MHz
+[    24.297] (II) DUMMY(0): Not using default mode "640x350" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "320x175" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "640x400" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "320x200" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "720x400" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "360x200" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "640x480" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "320x240" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "640x480" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "320x240" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "640x480" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "320x240" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "800x600" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "400x300" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "800x600" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "400x300" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "800x600" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "400x300" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "1024x768i" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "512x384i" (vrefresh out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "1024x768" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "512x384" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "1024x768" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "512x384" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "1024x768" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "512x384" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "1152x864" (hsync out of range)
+[    24.297] (II) DUMMY(0): Not using default mode "576x432" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x960" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x480" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x960" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x480" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x1024" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x512" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x1024" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x512" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x1024" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x512" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x1200" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "800x600" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x1200" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "800x600" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x1200" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "800x600" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x1200" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "800x600" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x1200" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "800x600" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1792x1344" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "896x672" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1792x1344" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "896x672" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1856x1392" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "928x696" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1856x1392" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "928x696" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1440" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "960x720" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1440" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "960x720" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "832x624" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "416x312" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1400x1050" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "700x525" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1400x1050" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "700x525" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1440" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "960x720" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2048x1536" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1024x768" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2048x1536" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1024x768" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2048x1536" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1024x768" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x360" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "320x180" (bad mode clock/interlace/doublescan)
+[    24.298] (II) DUMMY(0): Not using default mode "640x360" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "320x180" (bad mode clock/interlace/doublescan)
+[    24.298] (II) DUMMY(0): Not using default mode "720x405" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "360x202" (bad mode clock/interlace/doublescan)
+[    24.298] (II) DUMMY(0): Not using default mode "720x405" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "360x202" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "864x486" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "432x243" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "864x486" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "432x243" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "960x540" (monitor doesn't support reduced blanking)
+[    24.298] (II) DUMMY(0): Not using default mode "1024x576" (monitor doesn't support reduced blanking)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x720" (monitor doesn't support reduced blanking)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x720" (mode clock too high)
+[    24.298] (II) DUMMY(0): Not using default mode "1368x768" (monitor doesn't support reduced blanking)
+[    24.298] (II) DUMMY(0): Not using default mode "1368x768" (mode clock too high)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x900" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "800x450" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x900" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "800x450" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1080" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "960x540" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1080" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "960x540" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2048x1152" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1024x576" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2048x1152" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1024x576" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2560x1440" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x720" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2560x1440" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x720" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2880x1620" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1440x810" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2880x1620" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1440x810" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "3200x1800" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x900" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "3200x1800" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1600x900" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "3840x2160" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1080" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "3840x2160" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1080" (bad mode clock/interlace/doublescan)
+[    24.298] (II) DUMMY(0): Not using default mode "4096x2304" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "2048x1152" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "4096x2304" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "2048x1152" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "5120x2880" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "2560x1440" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "5120x2880" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "2560x1440" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "7680x4320" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "3840x2160" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "7680x4320" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "3840x2160" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "15360x8640" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "7680x4320" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "15360x8640" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "7680x4320" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x800" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x400" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x800" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "640x400" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1400x900" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "700x450" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1400x900" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "700x450" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1680x1050" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "840x525" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1680x1050" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "840x525" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1200" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "960x600" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "1920x1200" (height too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "960x600" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2560x1600" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x800" (hsync out of range)
+[    24.298] (II) DUMMY(0): Not using default mode "2560x1600" (width too large for virtual size)
+[    24.298] (II) DUMMY(0): Not using default mode "1280x800" (hsync out of range)
+[    24.298] (II) DUMMY(0): Virtual size is 1920x1080 (pitch 1920)
+[    24.298] (**) DUMMY(0): *Default mode "1024x768": 65.0 MHz, 48.4 kHz, 60.0 Hz
+[    24.298] (II) DUMMY(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz zd)
+[    24.298] (**) DUMMY(0): *Default mode "1024x576": 46.5 MHz, 35.9 kHz, 59.9 Hz
+[    24.298] (II) DUMMY(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz zd)
+[    24.298] (**) DUMMY(0): *Default mode "960x540": 40.8 MHz, 33.5 kHz, 59.6 Hz
+[    24.298] (II) DUMMY(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz zd)
+[    24.298] (**) DUMMY(0): *Default mode "800x600": 40.0 MHz, 37.9 kHz, 60.3 Hz
+[    24.298] (II) DUMMY(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz zd)
+[    24.298] (**) DUMMY(0): *Default mode "800x600": 36.0 MHz, 35.2 kHz, 56.2 Hz
+[    24.298] (II) DUMMY(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz zd)
+[    24.298] (**) DUMMY(0): *Default mode "640x480": 25.2 MHz, 31.5 kHz, 59.9 Hz
+[    24.298] (II) DUMMY(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "684x384": 42.6 MHz, 47.8 kHz, 59.9 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "684x384"x59.9   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "640x360": 37.2 MHz, 44.8 kHz, 59.9 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "640x360"x59.9   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "512x384": 32.5 MHz, 48.4 kHz, 60.0 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "512x384"x60.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "512x288": 23.2 MHz, 35.9 kHz, 60.0 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "512x288"x60.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "512x288": 21.0 MHz, 35.5 kHz, 59.9 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "512x288"x59.9   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "480x270": 18.6 MHz, 33.3 kHz, 59.8 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "480x270"x59.8   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "480x270": 20.4 MHz, 33.5 kHz, 59.6 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "480x270"x59.6   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "400x300": 20.0 MHz, 37.9 kHz, 60.3 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "400x300"x60.3   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "400x300": 18.0 MHz, 35.2 kHz, 56.3 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "400x300"x56.3   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz zd)
+[    24.299] (**) DUMMY(0): *Default mode "320x240": 12.6 MHz, 31.5 kHz, 60.1 Hz (D)
+[    24.299] (II) DUMMY(0): Modeline "320x240"x60.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz zd)
+[    24.299] (==) DUMMY(0): DPI set to (96, 96)
+[    24.299] (II) Loading sub module "fb"
+[    24.299] (II) LoadModule: "fb"
+[    24.299] (II) Module "fb" already built-in
+[    24.299] (II) Loading sub module "ramdac"
+[    24.299] (II) LoadModule: "ramdac"
+[    24.299] (II) Module "ramdac" already built-in
+[    24.301] (II) DUMMY(0): Output DUMMY0 using monitor section Virtual-1
+[    24.301] (**) DUMMY(0): Option "PreferredMode" "1920x1080"
+[    24.301] (II) DUMMY(0): Output DUMMY0 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec46980) and output DUMMY0 (0x5ac1fec47450)
+[    24.301] (II) DUMMY(0): Output DUMMY1 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec478b0) and output DUMMY1 (0x5ac1fec48380)
+[    24.301] (II) DUMMY(0): Output DUMMY2 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec487a0) and output DUMMY2 (0x5ac1fec49270)
+[    24.301] (II) DUMMY(0): Output DUMMY3 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec49690) and output DUMMY3 (0x5ac1fec4a160)
+[    24.301] (II) DUMMY(0): Output DUMMY4 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec4a5b0) and output DUMMY4 (0x5ac1fec4b080)
+[    24.301] (II) DUMMY(0): Output DUMMY5 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec4b4a0) and output DUMMY5 (0x5ac1fec4bfb0)
+[    24.301] (II) DUMMY(0): Output DUMMY6 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec4c410) and output DUMMY6 (0x5ac1fec4cee0)
+[    24.301] (II) DUMMY(0): Output DUMMY7 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec4d300) and output DUMMY7 (0x5ac1fec4de20)
+[    24.301] (II) DUMMY(0): Output DUMMY8 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec4e290) and output DUMMY8 (0x5ac1fec4ed60)
+[    24.301] (II) DUMMY(0): Output DUMMY9 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec4f180) and output DUMMY9 (0x5ac1fec4fcb0)
+[    24.301] (II) DUMMY(0): Output DUMMY10 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec50130) and output DUMMY10 (0x5ac1fec50c00)
+[    24.301] (II) DUMMY(0): Output DUMMY11 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec51020) and output DUMMY11 (0x5ac1fec51b60)
+[    24.301] (II) DUMMY(0): Output DUMMY12 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec51ff0) and output DUMMY12 (0x5ac1fec52ac0)
+[    24.301] (II) DUMMY(0): Output DUMMY13 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec52ee0) and output DUMMY13 (0x5ac1fec53a30)
+[    24.301] (II) DUMMY(0): Output DUMMY14 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec53ed0) and output DUMMY14 (0x5ac1fec549a0)
+[    24.301] (II) DUMMY(0): Output DUMMY15 has no monitor section
+[    24.301] (II) DUMMY(0): Created crtc (0x5ac1fec54dc0) and output DUMMY15 (0x5ac1fec55920)
+[    24.301] (II) DUMMY(0): Not using default mode "684x384" (doublescan mode not supported)
+[    24.301] (II) DUMMY(0): Not using default mode "640x360" (doublescan mode not supported)
+[    24.301] (II) DUMMY(0): Not using default mode "512x384" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Not using default mode "512x288" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Not using default mode "512x288" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Not using default mode "480x270" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Not using default mode "480x270" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Not using default mode "400x300" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Not using default mode "400x300" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Not using default mode "320x240" (doublescan mode not supported)
+[    24.302] (II) DUMMY(0): Printing probed modes for output DUMMY0
+[    24.302] (II) DUMMY(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz zd)
+[    24.302] (II) DUMMY(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz zd)
+[    24.302] (II) DUMMY(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz zd)
+[    24.302] (II) DUMMY(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz zd)
+[    24.302] (II) DUMMY(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz zd)
+[    24.302] (II) DUMMY(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz zd)
+[    24.302] (II) DUMMY(0): EDID for output DUMMY1
+[    24.302] (II) DUMMY(0): EDID for output DUMMY2
+[    24.302] (II) DUMMY(0): EDID for output DUMMY3
+[    24.302] (II) DUMMY(0): EDID for output DUMMY4
+[    24.302] (II) DUMMY(0): EDID for output DUMMY5
+[    24.302] (II) DUMMY(0): EDID for output DUMMY6
+[    24.302] (II) DUMMY(0): EDID for output DUMMY7
+[    24.302] (II) DUMMY(0): EDID for output DUMMY8
+[    24.302] (II) DUMMY(0): EDID for output DUMMY9
+[    24.302] (II) DUMMY(0): EDID for output DUMMY10
+[    24.302] (II) DUMMY(0): EDID for output DUMMY11
+[    24.302] (II) DUMMY(0): EDID for output DUMMY12
+[    24.302] (II) DUMMY(0): EDID for output DUMMY13
+[    24.302] (II) DUMMY(0): EDID for output DUMMY14
+[    24.302] (II) DUMMY(0): EDID for output DUMMY15
+[    24.302] (II) DUMMY(0): Output DUMMY0 connected
+[    24.302] (II) DUMMY(0): Output DUMMY1 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY2 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY3 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY4 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY5 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY6 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY7 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY8 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY9 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY10 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY11 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY12 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY13 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY14 disconnected
+[    24.302] (II) DUMMY(0): Output DUMMY15 disconnected
+[    24.302] (II) DUMMY(0): Using exact sizes for initial modes
+[    24.302] (II) DUMMY(0): Output DUMMY0 using initial mode 1024x768 +0+0
+[    24.303] (II) DUMMY(0): Using 271986 scanlines of offscreen memory 
+[    24.303] (==) DUMMY(0): Backing store enabled
+[    24.303] (==) DUMMY(0): Silken mouse enabled
+[    24.304] (WW) DUMMY(0): Option "ConstantDPI" is not used
+[    24.304] (WW) DUMMY(0): Option "IgnoreEDID" is not used
+[    24.304] (WW) DUMMY(0): Option "NoDDC" is not used
+[    24.304] (WW) DUMMY(0): Option "PreferredMode" is not used
+[    24.304] (II) Initializing extension Generic Event Extension
+[    24.304] (II) Initializing extension SHAPE
+[    24.304] (II) Initializing extension MIT-SHM
+[    24.304] (II) Initializing extension XInputExtension
+[    24.305] (II) Initializing extension XTEST
+[    24.305] (II) Initializing extension BIG-REQUESTS
+[    24.305] (II) Initializing extension SYNC
+[    24.305] (II) Initializing extension XKEYBOARD
+[    24.305] (II) Initializing extension XC-MISC
+[    24.306] (II) Initializing extension SECURITY
+[    24.306] (II) Initializing extension XFIXES
+[    24.306] (II) Initializing extension RENDER
+[    24.306] (II) Initializing extension RANDR
+[    24.306] (II) Initializing extension COMPOSITE
+[    24.306] (II) Initializing extension DAMAGE
+[    24.307] (II) Initializing extension MIT-SCREEN-SAVER
+[    24.308] (II) Initializing extension DOUBLE-BUFFER
+[    24.308] (II) Initializing extension RECORD
+[    24.308] (II) Initializing extension DPMS
+[    24.308] (II) Initializing extension Present
+[    24.308] (II) Initializing extension DRI3
+[    24.308] (II) Initializing extension X-Resource
+[    24.308] (II) Initializing extension XVideo
+[    24.308] (II) Initializing extension XVideo-MotionCompensation
+[    24.308] (II) Initializing extension SELinux
+[    24.308] (II) SELinux: Disabled on system
+[    24.308] (II) Initializing extension GLX
+[    24.308] (II) AIGLX: Screen 0 is not DRI2 capable
+[    26.095] (II) IGLX: Loaded and initialized swrast
+[    26.095] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    26.095] (II) Initializing extension XFree86-VidModeExtension
+[    26.095] (II) Initializing extension XFree86-DGA
+[    26.095] (II) Initializing extension XFree86-DRI
+[    26.095] (II) Initializing extension DRI2
+[    26.095] (II) DUMMY(0): Setting screen physical size to 270 x 203
+[    26.206] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    26.206] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    26.206] (II) LoadModule: "libinput"
+[    26.206] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    26.227] (II) Module libinput: vendor="X.Org Foundation"
+[    26.227] 	compiled for 1.21.1.11, module version = 1.4.0
+[    26.227] 	Module class: X.Org XInput Driver
+[    26.227] 	ABI class: X.Org XInput driver, version 24.4
+[    26.227] (II) Using input driver 'libinput' for 'Power Button'
+[    26.228] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 20 paused 0
+[    26.228] (**) Power Button: always reports core events
+[    26.228] (**) Option "Device" "/dev/input/event0"
+[    26.249] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    26.249] (II) event0  - Power Button: device is a keyboard
+[    26.249] (II) event0  - Power Button: device removed
+[    26.249] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+[    26.249] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    26.249] (**) Option "xkb_model" "pc105"
+[    26.249] (**) Option "xkb_layout" "us"
+[    26.250] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    26.250] (II) event0  - Power Button: device is a keyboard
+[    26.251] (II) config/udev: Adding input device Sleep Button (/dev/input/event1)
+[    26.251] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    26.251] (II) Using input driver 'libinput' for 'Sleep Button'
+[    26.252] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 23 paused 0
+[    26.252] (**) Sleep Button: always reports core events
+[    26.252] (**) Option "Device" "/dev/input/event1"
+[    26.253] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[    26.253] (II) event1  - Sleep Button: device is a keyboard
+[    26.254] (II) event1  - Sleep Button: device removed
+[    26.254] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSLPBN:00/input/input1/event1"
+[    26.254] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[    26.254] (**) Option "xkb_model" "pc105"
+[    26.254] (**) Option "xkb_layout" "us"
+[    26.255] (II) event1  - Sleep Button: is tagged by udev as: Keyboard
+[    26.255] (II) event1  - Sleep Button: device is a keyboard
+[    26.255] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[    26.255] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    26.256] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    26.256] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 24 paused 0
+[    26.256] (**) AT Translated Set 2 keyboard: always reports core events
+[    26.256] (**) Option "Device" "/dev/input/event2"
+[    26.258] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    26.258] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    26.258] (II) event2  - AT Translated Set 2 keyboard: device removed
+[    26.258] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input2/event2"
+[    26.258] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 8)
+[    26.258] (**) Option "xkb_model" "pc105"
+[    26.258] (**) Option "xkb_layout" "us"
+[    26.259] (II) event2  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    26.260] (II) event2  - AT Translated Set 2 keyboard: device is a keyboard
+[    26.260] (II) config/udev: Adding input device ImPS/2 Generic Wheel Mouse (/dev/input/event3)
+[    26.260] (**) ImPS/2 Generic Wheel Mouse: Applying InputClass "libinput pointer catchall"
+[    26.260] (II) Using input driver 'libinput' for 'ImPS/2 Generic Wheel Mouse'
+[    26.261] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 25 paused 0
+[    26.261] (**) ImPS/2 Generic Wheel Mouse: always reports core events
+[    26.261] (**) Option "Device" "/dev/input/event3"
+[    26.262] (II) event3  - ImPS/2 Generic Wheel Mouse: is tagged by udev as: Mouse
+[    26.263] (II) event3  - ImPS/2 Generic Wheel Mouse: device is a pointer
+[    26.263] (II) event3  - ImPS/2 Generic Wheel Mouse: device removed
+[    26.263] (II) libinput: ImPS/2 Generic Wheel Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    26.263] (II) libinput: ImPS/2 Generic Wheel Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    26.263] (II) libinput: ImPS/2 Generic Wheel Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    26.263] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input4/event3"
+[    26.263] (II) XINPUT: Adding extended input device "ImPS/2 Generic Wheel Mouse" (type: MOUSE, id 9)
+[    26.263] (**) Option "AccelerationScheme" "none"
+[    26.263] (**) ImPS/2 Generic Wheel Mouse: (accel) selected scheme none/0
+[    26.263] (**) ImPS/2 Generic Wheel Mouse: (accel) acceleration factor: 2.000
+[    26.263] (**) ImPS/2 Generic Wheel Mouse: (accel) acceleration threshold: 4
+[    26.264] (II) event3  - ImPS/2 Generic Wheel Mouse: is tagged by udev as: Mouse
+[    26.264] (II) event3  - ImPS/2 Generic Wheel Mouse: device is a pointer
+[    26.265] (II) config/udev: Adding input device ImPS/2 Generic Wheel Mouse (/dev/input/mouse0)
+[    26.265] (II) No input driver specified, ignoring this device.
+[    26.265] (II) This device may have been added with another device file.
+[    66.289] (**) Option "fd" "20"
+[    66.289] (II) event0  - Power Button: device removed
+[    66.291] (**) Option "fd" "23"
+[    66.291] (II) event1  - Sleep Button: device removed
+[    66.292] (**) Option "fd" "24"
+[    66.292] (II) event2  - AT Translated Set 2 keyboard: device removed
+[    66.293] (**) Option "fd" "25"
+[    66.294] (II) event3  - ImPS/2 Generic Wheel Mouse: device removed

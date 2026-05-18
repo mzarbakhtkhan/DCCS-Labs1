@@ -1,0 +1,42 @@
+{
+  "Version": "24.04",
+  "OEM": {
+    "Vendor": "Amazon EC2",
+    "Product": "t3.medium",
+    "Family": ""
+  },
+  "BIOS": {
+    "Vendor": "Amazon EC2",
+    "Version": "1.0"
+  },
+  "Arch": "amd64",
+  "HwCap": "x86-64-v4",
+  "GPU": [
+    {
+      "Vendor": "1d0f",
+      "Model": "1111"
+    }
+  ],
+  "RAM": 3.9,
+  "Partitions": [
+    7,
+    0.9,
+    0.1
+  ],
+  "Screens": [
+    {
+      "Size": "0mmx0mm",
+      "Resolution": "800x600",
+      "Frequency": "60.00"
+    }
+  ],
+  "Autologin": true,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "C",
+  "Timezone": "Etc/UTC"
+}

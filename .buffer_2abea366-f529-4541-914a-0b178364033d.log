@@ -1,0 +1,6 @@
+Script started on 2026-01-06 09:06:14+00:00 [<not executed on terminal>]
+Enhanced logging active (v3.0) | Session: 2abea366...
+Instance: i-04c89248c735ddf8a | Container: spot
+[?2004h]0;ubuntu@ip-172-31-15-129: /root[01;32mubuntu@ip-172-31-15-129[00m:[01;34m/root[00m$ [?2004l[?2004h[?2004l
+
+Script done on 2026-01-06 09:10:18+00:00 [COMMAND_EXIT_CODE="0"]
