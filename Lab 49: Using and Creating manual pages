@@ -1,0 +1,93 @@
+Lab 49 – Using and Creating Man Pages
+
+In this lab, I learned how to use Linux manual pages (man pages) and how to create a custom man page for my own script. I practiced viewing existing documentation, writing a script, creating a manual page, compressing it, and installing it into the Linux man page directory.
+
+Objectives
+Used existing Linux man pages to understand command documentation.
+Created a custom man page for a shell script.
+Installed and viewed the custom man page using the man command.
+Task 1 – Using Existing Man Pages
+
+First, I opened the manual page for the ls command.
+
+man ls
+
+I explored the different sections of the man page, including:
+
+NAME
+SYNOPSIS
+DESCRIPTION
+OPTIONS
+
+I also learned how to:
+
+Scroll using arrow keys
+Exit using q
+
+This helped me understand how Linux documentation is organized and how useful man pages are for learning command usage and options.
+
+Task 2 – Creating a Simple Script
+
+I created a simple Bash script named test_script.sh.
+
+Script Creation
+nano test_script.sh
+
+I added the following code:
+
+#!/bin/bash
+echo "This is a test script."
+
+Then I saved the file and exited the editor.
+
+Creating a Custom Man Page
+
+Next, I created a custom man page file called test_script.1.
+
+nano test_script.1
+
+I wrote the following content inside the man page:
+
+.TH TEST_SCRIPT 1 "October 2023" "Version 1.0" "Custom Manual"
+.SH NAME
+test_script \- A simple test script demonstration.
+.SH SYNOPSIS
+test_script
+.SH DESCRIPTION
+This script outputs a simple message: "This is a test script."
+.SH AUTHOR
+Your Name (your.email@example.com)
+What I Learned
+.TH defines the title/header of the man page.
+.SH creates section headings.
+\- is used to display a hyphen correctly in man pages.
+Task 3 – Installing and Viewing the Custom Man Page
+Compressing the Man Page
+
+I compressed the man page using gzip.
+
+gzip test_script.1
+Moving the File
+
+Then I moved the compressed file into the Linux man page directory.
+
+sudo mv test_script.1.gz /usr/local/share/man/man1/
+Viewing the Custom Man Page
+
+Finally, I viewed my custom man page using:
+
+man test_script
+
+The custom documentation displayed successfully in the terminal.
+
+Conclusion
+
+In this lab, I successfully learned how to:
+
+Use existing Linux man pages
+Create a Bash script
+Write a custom man page
+Compress and install the man page
+Access the custom documentation using the man command
+
+This lab improved my understanding of Linux documentation and showed me how developers can create professional manual pages for scripts and utilities.
