@@ -1,0 +1,115 @@
+ubuntu@ip-172-31-10-19:~$ #Lab 32: Logging with Python’s Logging Module
+ubuntu@ip-172-31-10-19:~$ #Objectives Understand the importance of logging in software development. Learn to use Python's logging module for effective logging. Configure logging levels and formats. Implement logging in a Python application to track different severity levels.
+ubuntu@ip-172-31-10-19:~$ #Introduction:Logging is a critical aspect of software development and maintenance. It helps developers track the application's behavior and resolve issues by providing essential runtime information. Python's built-in logging module offers a flexible framework for emitting log messages from Python programs. This lab will guide you through the basics of setting up and using the logging module.
+ubuntu@ip-172-31-10-19:~$ touch logging_lab.py
+ubuntu@ip-172-31-10-19:~$ vi logging_lab.py
+ubuntu@ip-172-31-10-19:~$ cat logging_lab.py
+import logging
+
+# Task 1: Import logging (already done)
+
+# Task 2 & 3: Configure logging with level and format
+logging.basicConfig(
+    level=logging.DEBUG,  # Capture all levels
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    # Optional: Log to file as well
+    handlers=[
+        logging.FileHandler("app.log", mode='w'),
+        logging.StreamHandler()  # Console output
+    ]
+)
+
+print("=== Lab 32: Logging with Python’s Logging Module ===\n")
+
+# Task 4: Log messages at different levels
+logging.debug("This is a debug message - detailed diagnostic info.")
+logging.info("This is an info message - things are working as expected.")
+logging.warning("This is a warning message - something unexpected happened.")
+logging.error("This is an error message - serious problem occurred.")
+logging.critical("This is a critical message - program may not continue.")
+
+# Task 5: Practical Application
+def divide_numbers(a, b):
+    """Example function demonstrating logging in error handling."""
+    try:
+        if b == 0:
+            raise ZeroDivisionError("Cannot divide by zero")
+        result = a / b
+        logging.info(f"Division successful: {a} / {b} = {result}")
+        return result
+    except ZeroDivisionError as e:
+        logging.error(f"Division by zero error: {e}")
+        return None
+    except Exception as e:
+        logging.critical(f"Unexpected error during division: {e}")
+        return None
+
+
+# Demonstrate the practical function
+print("\n--- Practical Application: Division Function ---")
+result1 = divide_numbers(10, 2)
+print(f"10 / 2 = {result1}")
+
+result2 = divide_numbers(15, 0)
+print(f"15 / 0 = {result2}")
+
+# Additional useful example
+logging.info("Starting file processing simulation...")
+# Simulate a task
+try:
+    with open("sample_data.txt", "w") as f:
+        f.write("Sample data for logging lab.")
+    logging.info("File written successfully.")
+except Exception as e:
+    logging.error(f"File operation failed: {e}")
+
+print("\nLogging demonstration completed!")
+print("Check 'app.log' file for complete log records.")
+ubuntu@ip-172-31-10-19:~$
+ubuntu@ip-172-31-10-19:~$ python3 logging_lab.py
+=== Lab 32: Logging with Python’s Logging Module ===
+
+2026-06-07 10:19:51 - DEBUG - This is a debug message - detailed diagnostic info.
+2026-06-07 10:19:51 - INFO - This is an info message - things are working as expected.
+2026-06-07 10:19:51 - WARNING - This is a warning message - something unexpected happened.
+2026-06-07 10:19:51 - ERROR - This is an error message - serious problem occurred.
+2026-06-07 10:19:51 - CRITICAL - This is a critical message - program may not continue.
+
+--- Practical Application: Division Function ---
+2026-06-07 10:19:51 - INFO - Division successful: 10 / 2 = 5.0
+10 / 2 = 5.0
+2026-06-07 10:19:51 - ERROR - Division by zero error: Cannot divide by zero
+15 / 0 = None
+2026-06-07 10:19:51 - INFO - Starting file processing simulation...
+2026-06-07 10:19:51 - INFO - File written successfully.
+
+Logging demonstration completed!
+Check 'app.log' file for complete log records.
+ubuntu@ip-172-31-10-19:~$
+ubuntu@ip-172-31-10-19:~$ cat app.log
+2026-06-07 10:19:54 - DEBUG - This is a debug message - detailed diagnostic info.
+2026-06-07 10:19:54 - INFO - This is an info message - things are working as expected.
+2026-06-07 10:19:54 - WARNING - This is a warning message - something unexpected happened.
+2026-06-07 10:19:54 - ERROR - This is an error message - serious problem occurred.
+2026-06-07 10:19:54 - CRITICAL - This is a critical message - program may not continue.
+2026-06-07 10:19:54 - INFO - Division successful: 10 / 2 = 5.0
+2026-06-07 10:19:54 - ERROR - Division by zero error: Cannot divide by zero
+2026-06-07 10:19:54 - INFO - Starting file processing simulation...
+2026-06-07 10:19:54 - INFO - File written successfully.
+ubuntu@ip-172-31-10-19:~$
+ubuntu@ip-172-31-10-19:~$ tail -n 20 app.log
+2026-06-07 10:19:54 - DEBUG - This is a debug message - detailed diagnostic info.
+2026-06-07 10:19:54 - INFO - This is an info message - things are working as expected.
+2026-06-07 10:19:54 - WARNING - This is a warning message - something unexpected happened.
+2026-06-07 10:19:54 - ERROR - This is an error message - serious problem occurred.
+2026-06-07 10:19:54 - CRITICAL - This is a critical message - program may not continue.
+2026-06-07 10:19:54 - INFO - Division successful: 10 / 2 = 5.0
+2026-06-07 10:19:54 - ERROR - Division by zero error: Cannot divide by zero
+2026-06-07 10:19:54 - INFO - Starting file processing simulation...
+2026-06-07 10:19:54 - INFO - File written successfully.
+ubuntu@ip-172-31-10-19:~$
+ubuntu@ip-172-31-10-19:~$ #LabDone
+ubuntu@ip-172-31-10-19:~$ #Conclusion In this lab, you learned how to implement logging using Python’s logging module. By setting log levels and formats, you can effectively categorize and manage log information, which is crucial for debugging and monitoring production systems. Logging provides a window into real-time application processes, aiding in identifying and solving issues promptly. Summary: Logging offers a robust toolset for capturing information about an application's execution, significantly aiding both development and ongoing maintenance. Implementing a structured logging system ensures that your code is not only reliable but also easier to debug and improve over time.
+ubuntu@ip-172-31-10-19:~$
+
